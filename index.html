@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing page de presentacion de artista con biografia, trayectoria y proximas presentaciones."
+    />
+    <title>Presentacion Artista</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nombre del Artista",
+        "url": "https://example.com",
+        "jobTitle": "Artista",
+        "description": "Artista con trayectoria en escenarios nacionales e internacionales.",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://example.com"
+        },
+        "subjectOf": [
+          {
+            "@type": "Event",
+            "name": "Presentacion 1",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "startDate": "2026-06-20T20:00:00-05:00",
+            "location": {
+              "@type": "Place",
+              "name": "Teatro Principal",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Ciudad",
+                "addressCountry": "ES"
+              }
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+    <header>
+      <nav class="navbar" aria-label="Navegacion principal" role="navigation">
+        <ul class="nav-links">
+          <li><a href="#sobre-mi" aria-label="Ir a la seccion Sobre mi">Sobre mi</a></li>
+          <li><a href="#trayectoria" aria-label="Ir a la seccion Trayectoria">Trayectoria</a></li>
+          <li>
+            <a
+              href="#presentaciones"
+              aria-label="Ir a la seccion Proximas presentaciones"
+              >Proximas presentaciones</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido-principal" tabindex="-1">
+      <section
+        id="bienvenida"
+        aria-labelledby="titulo-bienvenida"
+        itemscope
+        itemtype="https://schema.org/WebPageElement"
+      >
+        <div class="content" role="region" aria-label="Mensaje de bienvenida">
+          <h1 id="titulo-bienvenida" itemprop="name">Bienvenidos al universo artistico</h1>
+          <p>
+            Esta web presenta la esencia, el recorrido y los proximos escenarios
+            de un artista en una experiencia de una sola pagina.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="sobre-mi"
+        aria-labelledby="titulo-sobre-mi"
+        itemscope
+        itemtype="https://schema.org/Person"
+      >
+        <article class="content" role="article" aria-label="Informacion biografica del artista">
+          <h2 id="titulo-sobre-mi" itemprop="name">Sobre mi</h2>
+          <p>
+            Comparte aqui una introduccion personal: identidad artistica,
+            inspiraciones, estilo y enfoque creativo.
+          </p>
+        </article>
+      </section>
+
+      <section id="trayectoria" aria-labelledby="titulo-trayectoria">
+        <article class="content" role="article" aria-label="Recorrido profesional del artista">
+          <h2 id="titulo-trayectoria">Trayectoria</h2>
+          <p>
+            Incluye una linea de tiempo con hitos relevantes, colaboraciones,
+            reconocimientos y proyectos destacados.
+          </p>
+          <ul aria-label="Hitos de trayectoria artistica">
+            <li>Inicio de carrera y primeras presentaciones.</li>
+            <li>Colaboraciones y participaciones destacadas.</li>
+            <li>Reconocimientos y proyectos recientes.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section
+        id="presentaciones"
+        aria-labelledby="titulo-presentaciones"
+        itemscope
+        itemtype="https://schema.org/Event"
+      >
+        <article class="content" role="article" aria-label="Agenda de proximos eventos">
+          <h2 id="titulo-presentaciones" itemprop="name">Proximas presentaciones</h2>
+          <p>
+            Agrega aqui fechas, ciudades, lugares y detalles para que el publico
+            pueda seguir cada evento.
+          </p>
+          <p>
+            <strong>Fecha:</strong>
+            <time datetime="2026-06-20T20:00" itemprop="startDate"
+              >20 de junio de 2026, 20:00</time
+            >
+          </p>
+          <p itemprop="location" itemscope itemtype="https://schema.org/Place">
+            <strong>Lugar:</strong>
+            <span itemprop="name">Teatro Principal</span>
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>Fin del contenido principal.</p>
+    </footer>
+  </body>
+</html>
