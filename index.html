@@ -1,40 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Landing page de presentacion de artista con biografia, trayectoria y proximas presentaciones."
+      content="Landing page de presentación de Mateo Vox con biografía, trayectoria y próximas presentaciones de arte contemporáneo."
     />
-    <title>Presentacion Artista</title>
+    <title>Mateo Vox | Presentación Artística</title>
     <link rel="stylesheet" href="style.css" />
+    
+    <!-- SEO: Marcado Schema.org -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Nombre del Artista",
-        "url": "https://example.com",
-        "jobTitle": "Artista",
-        "description": "Artista con trayectoria en escenarios nacionales e internacionales.",
+        "@type": "Artist",
+        "name": "Mateo Vox",
+        "url": "https://mateovoxart.com",
+        "jobTitle": "Artista visual contemporáneo",
+        "description": "Artista contemporáneo que fusiona escultura orgánica con entornos lumínicos y arte digital interactivo.",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://example.com"
+          "@id": "https://mateovoxart.com"
         },
         "subjectOf": [
           {
             "@type": "Event",
-            "name": "Presentacion 1",
+            "name": "Neon Genesis",
             "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
             "eventStatus": "https://schema.org/EventScheduled",
-            "startDate": "2026-06-20T20:00:00-05:00",
+            "startDate": "2026-10-12T19:30:00-04:00",
             "location": {
               "@type": "Place",
-              "name": "Teatro Principal",
+              "name": "Galería CyberVibe",
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "Ciudad",
-                "addressCountry": "ES"
+                "addressLocality": "Nueva York",
+                "addressCountry": "US"
               }
             }
           }
@@ -46,95 +48,112 @@
     <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 
     <header>
-      <nav class="navbar" aria-label="Navegacion principal" role="navigation">
+      <nav class="navbar" aria-label="Navegación principal">
         <ul class="nav-links">
-          <li><a href="#sobre-mi" aria-label="Ir a la seccion Sobre mi">Sobre mi</a></li>
-          <li><a href="#trayectoria" aria-label="Ir a la seccion Trayectoria">Trayectoria</a></li>
-          <li>
-            <a
-              href="#presentaciones"
-              aria-label="Ir a la seccion Proximas presentaciones"
-              >Proximas presentaciones</a
-            >
-          </li>
+          <li><a href="#bienvenida" aria-label="Ir al inicio">Inicio</a></li>
+          <li><a href="#sobre-mi" aria-label="Ir a la sección Sobre mí">Sobre mí</a></li>
+          <li><a href="#trayectoria" aria-label="Ir a la sección Trayectoria">Trayectoria</a></li>
+          <li><a href="#presentaciones" aria-label="Ir a la sección Próximas presentaciones">Próximas presentaciones</a></li>
         </ul>
       </nav>
     </header>
 
     <main id="contenido-principal" tabindex="-1">
-      <section
-        id="bienvenida"
-        aria-labelledby="titulo-bienvenida"
-        itemscope
-        itemtype="https://schema.org/WebPageElement"
-      >
-        <div class="content" role="region" aria-label="Mensaje de bienvenida">
-          <h1 id="titulo-bienvenida" itemprop="name">Bienvenidos al universo artistico</h1>
+      
+      <!-- Sección 1: Bienvenida -->
+      <section id="bienvenida" aria-labelledby="titulo-bienvenida">
+        <div class="content">
+          <h1 id="titulo-bienvenida">Donde la luz se vuelve materia</h1>
           <p>
-            Esta web presenta la esencia, el recorrido y los proximos escenarios
-            de un artista en una experiencia de una sola pagina.
+            Bienvenidos al universo de Mateo Vox: una mezcla entre arte digital,
+            escultura neón y experiencias inmersivas en una sola página.
+          </p>
+          <p>
+            Explora su visión creativa, sus hitos más importantes y las próximas
+            estaciones artísticas de 2026.
           </p>
         </div>
       </section>
 
-      <section
-        id="sobre-mi"
-        aria-labelledby="titulo-sobre-mi"
-        itemscope
-        itemtype="https://schema.org/Person"
-      >
-        <article class="content" role="article" aria-label="Informacion biografica del artista">
-          <h2 id="titulo-sobre-mi" itemprop="name">Sobre mi</h2>
+      <!-- Sección 2: Sobre Mí -->
+      <section id="sobre-mi" aria-labelledby="titulo-sobre-mi" itemscope itemtype="https://schema.org/Person">
+        <article class="content">
+          <h2 id="titulo-sobre-mi" itemprop="name">Sobre mí</h2>
           <p>
-            Comparte aqui una introduccion personal: identidad artistica,
-            inspiraciones, estilo y enfoque creativo.
+            Nacido en el pulso urbano, Mateo Vox crea obras que atrapan lo
+            efímero usando modelado 3D, tubos de gas argón y materiales
+            reciclados.
+          </p>
+          <p>
+            Su propuesta busca que el público no solo observe, sino que sea
+            absorbido por una atmósfera lumínica y orgánica.
           </p>
         </article>
       </section>
 
+      <!-- Sección 3: Trayectoria -->
       <section id="trayectoria" aria-labelledby="titulo-trayectoria">
-        <article class="content" role="article" aria-label="Recorrido profesional del artista">
+        <article class="content">
           <h2 id="titulo-trayectoria">Trayectoria</h2>
           <p>
-            Incluye una linea de tiempo con hitos relevantes, colaboraciones,
-            reconocimientos y proyectos destacados.
+            Una línea de tiempo con exposiciones, reconocimientos y obras de
+            impacto internacional.
           </p>
-          <ul aria-label="Hitos de trayectoria artistica">
-            <li>Inicio de carrera y primeras presentaciones.</li>
-            <li>Colaboraciones y participaciones destacadas.</li>
-            <li>Reconocimientos y proyectos recientes.</li>
-          </ul>
+          <div class="timeline" aria-label="Hitos de trayectoria artística">
+            <div class="timeline-item">
+              <strong>2025</strong> - <em>Exposición "Luz Líquida"</em> en el
+              Museo de Arte Contemporáneo Digital (Tokio).
+            </div>
+            <div class="timeline-item">
+              <strong>2024</strong> - Ganador del Premio a la Innovación
+              Escultórica (Bienal de Berlín).
+            </div>
+            <div class="timeline-item">
+              <strong>2022</strong> - Instalación urbana "Ecos del Mañana" en
+              la plaza central de Madrid.
+            </div>
+          </div>
         </article>
       </section>
 
-      <section
-        id="presentaciones"
-        aria-labelledby="titulo-presentaciones"
-        itemscope
-        itemtype="https://schema.org/Event"
-      >
-        <article class="content" role="article" aria-label="Agenda de proximos eventos">
-          <h2 id="titulo-presentaciones" itemprop="name">Proximas presentaciones</h2>
+      <!-- Sección 4: Presentaciones -->
+      <section id="presentaciones" aria-labelledby="titulo-presentaciones">
+        <div class="content">
+          <h2 id="titulo-presentaciones">Próximas presentaciones</h2>
           <p>
-            Agrega aqui fechas, ciudades, lugares y detalles para que el publico
-            pueda seguir cada evento.
+            No te pierdas las próximas experiencias inmersivas de Mateo Vox.
           </p>
-          <p>
-            <strong>Fecha:</strong>
-            <time datetime="2026-06-20T20:00" itemprop="startDate"
-              >20 de junio de 2026, 20:00</time
-            >
-          </p>
-          <p itemprop="location" itemscope itemtype="https://schema.org/Place">
-            <strong>Lugar:</strong>
-            <span itemprop="name">Teatro Principal</span>
-          </p>
-        </article>
+          <div class="events-list">
+            
+            <article class="event-card" itemscope itemtype="https://schema.org/Event">
+              <h3 itemprop="name">Neon Genesis (Instalación en vivo)</h3>
+              <p itemprop="location" itemscope itemtype="https://schema.org/Place">
+                <strong>Lugar:</strong> <span itemprop="name">Galería CyberVibe, Nueva York</span>
+              </p>
+              <p>
+                <strong>Fecha:</strong>
+                <time datetime="2026-10-12" itemprop="startDate">12 al 28 de octubre, 2026</time>
+              </p>
+            </article>
+
+            <article class="event-card" itemscope itemtype="https://schema.org/Event">
+              <h3 itemprop="name">Simbiosis Orgánica (Masterclass & Expo)</h3>
+              <p itemprop="location" itemscope itemtype="https://schema.org/Place">
+                <strong>Lugar:</strong> <span itemprop="name">Centro Cultural de Bellas Artes, CDMX</span>
+              </p>
+              <p>
+                <strong>Fecha:</strong>
+                <time datetime="2026-12-05" itemprop="startDate">05 de diciembre, 2026</time>
+              </p>
+            </article>
+
+          </div>
+        </div>
       </section>
     </main>
 
     <footer>
-      <p>Fin del contenido principal.</p>
+      <p>&copy; 2026 Mateo Vox. Arte contemporáneo en clave lumínica.</p>
     </footer>
   </body>
 </html>
